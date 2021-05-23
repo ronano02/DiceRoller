@@ -14,9 +14,9 @@ print("Type \'Done' when finished")
 
 while exit == 0:
     roll = input()
-    if roll in {'Done', 'done', 'DONE'}:
+    if roll in ['Done', 'done', 'DONE']:
         exit = 1
-    elif roll in {'roll', 'ROLL', 'Roll'}:
+    elif roll in ['Roll', 'roll', 'ROLL']:
         print(random.randrange(1, dice))
     else:
         print("Invalid Entry")
